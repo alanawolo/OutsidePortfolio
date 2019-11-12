@@ -25,6 +25,53 @@
     </div>
         </nav>
       </div>
+      <div>
+        <form class="form-horizontal" action = 'https://formspree.io/mdooobly' method="POST">
+          <fieldset>
+              <legend class="text-center">Contact Information</legend>
+      
+              <div class="form-group">
+                  <span><i class="firstname"></i></span>
+                  <div>
+                      <label for="fname">First Name<input id="fname" name="name" type="text" placeholder="First Name" class="form-control" aria-label= "First Name" required></label>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <span><i class="lastname"></i></span>
+                  <div>
+                      <label for="lname">Last Name<input id="lname" name="name" type="text" placeholder="Last Name" class="form-control" aria-label="Last Name" required></label>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                  <span><i class="email"></i></span>
+                  <div>
+                      <label for="email">Email Address<input id="email" name="email" type="email" placeholder="Email Address" class="form-control" aria-label="Email Address" required></label>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                  <span><i class="phonenumber"></i></span>
+                  <div>
+                      <label for='phone'>Phone Number<input id="phone" name="phone" type="tel" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone (use format ###-###-####)" class="form-control" aria-label= "Phone Number" required></label>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                  <span><i class = "message"></i></span>
+                  <div>
+                      <label for='message'>Message<textarea class="form-control" id="message" name="message" placeholder="Enter your message here!" aria-label= "Type your message here" required></textarea></label>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                  <div>
+                      <button type="submit" class="btn btn-primary btn-lg" aria-label= "Submit button">Submit</button>
+                  </div>
+              </div>
+          </fieldset>
+      </form>
+      </div>
       </div>
       </main>
       </body>
