@@ -1,0 +1,96 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: white;
+  font-family:'Quicksand', sans-serif;
+  font-size: 18px;
+  
+}
+
+p{
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    }
+    
+    nav ul{
+      list-style-type: none;
+    }
+    
+    nav li{
+      display: inline;
+      padding-right: 20px;
+    }
+    
+    nav a{
+      color: black;
+      font-weight: bold;
+      text-decoration:none;
+    }
+    
+    nav a:hover{
+      text-decoration: underline;
+      color: orchid;
+    }
+    
+    #nav_bar ul li a.active-page{
+      color: blue;
+    }
+    
+    .skip a{
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: top 1s ease-out;
+      transition: top 1s ease-out;
+      z-index: 1;
+    }
+    
+    .skip a:focus, .skip a:active{
+      border: 2px solid black;
+      left: auto;
+      top: auto;
+      height: auto;
+      overflow: auto;
+      margin: 40px;
+      padding: 6px;
+      z-index: 999;
+    }
+    
+    a.skip{
+      top:auto;
+    } 
+    
+    *:focus{
+    border: 2px solid black;
+    } 
+    
+    footer{
+      background-color: black;
+      color: white;
+      grid-column: 1 / -1;  
+      padding-top: 10px;
+      text-align: center;
+    }
+    
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      width: 100vw; 
+    }
+    
+    .nav{
+      font-size: 14px;
+      line-height: 23px;
+      background-attachment: fixed;
+      background-color: white;
+      padding-top: 10px; 
+      padding-bottom: 10px;
+      text-align: right;  
+      grid-column: 3 / 3; 
+    }
+    
