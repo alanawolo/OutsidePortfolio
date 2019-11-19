@@ -8,7 +8,6 @@ body{
   font-size: 18px;
   
 }
-
 p{
     font-size: 20px;
     line-height: 20px;
@@ -101,6 +100,8 @@ h3{
     }
     .publications{
       padding: 20px;
+      margin-left: 15px;
+      line-height: 1.5;
 
     }
     .nav{
