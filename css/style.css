@@ -115,6 +115,7 @@ h3{
       padding-bottom: 10px;
       text-align: right;  
       grid-column: 3 / 3; 
+      grid-row: 1/2;
     }
     
     #maininfo{
@@ -130,9 +131,13 @@ h3{
     }
 
 /*this is for the contact page*/
-  .container-contact{
-    display: grid;
-
+.container-contact{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 5px;
+  align-items: center;
+  justify-items: center;
   }
   #contact-header{
     grid-column-start: 1;
@@ -141,23 +146,33 @@ h3{
     grid-row-end: 3;
 }
 
+
+
 #contact-header h1{
     text-align: center;
     font-weight: bold;
 }
 
-form{
-    grid-column-start: 1;
+.form{
+    grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     justify-content: center;
-    align-content: center;
+    align-content: left;
+    background-color: #E8E8E8;
+    padding: 50px 0px 50px 50px;
+    border: solid 1px darkgray;
 }
 
 .ceren{
   grid-column: 1/2;
   grid-row: 1/2;
+  text-align: left;
+  padding: 40px 20px;
+  font-size: 30pt;
+  font-weight: bold;
+  background-color: white;
 }
 
 .ceren h1{
@@ -185,4 +200,17 @@ textarea{
 .text-center{
     text-align: center;
     font-weight: bold;
+    font-size: 24pt;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+      html{
+        scroll-behavior: initial;
+    }
 }
