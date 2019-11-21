@@ -86,7 +86,7 @@ h3{
       background-color: lightgrey;
       color: black;
       grid-column: 1 / -1;  
-      padding: 6px;
+      padding: 20px 0px 20px 0px;
       text-align: center;
     }
     
@@ -134,8 +134,8 @@ h3{
 .container-contact{
   display: grid;
   grid-template-rows: auto auto auto auto;
-  grid-template-columns: auto auto auto;
-  grid-row-gap: 5px;
+  grid-template-columns: 25% 50% 25%;
+  grid-row-gap: 50px;
   align-items: center;
   justify-items: center;
   }
@@ -159,9 +159,9 @@ h3{
     grid-row-start: 2;
     grid-row-end: 3;
     justify-content: center;
-    align-content: left;
+    align-items: left;
     background-color: #E8E8E8;
-    padding: 50px 0px 50px 50px;
+    padding: 50px 50px 50px 50px;
     border: solid 1px darkgray;
 }
 
@@ -169,8 +169,8 @@ h3{
   grid-column: 1/2;
   grid-row: 1/2;
   text-align: left;
-  padding: 40px 20px;
-  font-size: 30pt;
+  padding: 20px 0px 20px 20px;
+  font-size: 24pt;
   font-weight: bold;
   background-color: white;
 }
@@ -201,6 +201,7 @@ textarea{
     text-align: center;
     font-weight: bold;
     font-size: 24pt;
+    padding: 0px 0px 50px 0px;
 }
 
 @media screen and (min-width: 768px) {
