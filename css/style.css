@@ -8,6 +8,23 @@ body{
   font-size: 18px;
   
 }
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  z-index: 1;
+}
+
+.skip a:focus{
+/*Add the selector and rule to move the skip link to the exact top.*/
+  top: 0px;
+}
+
+*:focus{
+  border: 2px solid black;
+}
 p{
     font-size: 20px;
     line-height: 20px;
@@ -63,24 +80,6 @@ h3{
       z-index: 1;
     }
     
-    .skip a:focus, .skip a:active{
-      border: 2px solid black;
-      left: auto;
-      top: auto;
-      height: auto;
-      overflow: auto;
-      margin: 40px;
-      padding: 6px;
-      z-index: 999;
-    }
-    
-    a.skip{
-      top:auto;
-    } 
-    
-    *:focus{
-    border: 2px solid black;
-    } 
     
     footer{
       background-color: lightgrey;
@@ -252,5 +251,19 @@ textarea {
 @media screen and (prefers-reduced-motion: reduce){
       html{
         scroll-behavior: initial;
+    }
+    .skip a{
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: none;
+      transition: none;
+      z-index: 1;
+    }
+  
+    .skip a:focus{
+      top:0;
     }
 }
