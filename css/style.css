@@ -4,55 +4,88 @@ html{
 
 body{
   background-color: white;
-  font-family:'Quicksand', sans-serif;
+  font-family: 'Abel', sans-serif;
   font-size: 18px;
-  
+
+}
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  z-index: 1;
 }
 
+.skip a:focus{
+/*Add the selector and rule to move the skip link to the exact top.*/
+  top: 0px;
+}
+
+*:focus{
+  border: 2px solid black;
+}
 p{
-    font-size: 20px;
+    font-size: 15px;
     line-height: 20px;
-    padding-bottom: 10px;
+    padding: 15px;
     }
 
+h1{
+  font-size: 35px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    /* padding-left: 25px; */
+    /* grid-column: 3 / 3; */
+}
+
+h2{
+  text-align: center;
+  font-size: 20px;
+  padding: 25px;
+  line-height: 1.25;
+}
 
 h3{
   font-size: 14px;
   line-height: 20px;
-  color: seagreen;
+  color: black;
 }
 
+
 .one{
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   color: black;
   font-style: italic;
 }
-    
+
     nav ul{
       list-style-type: none;
     }
-    
+
     nav li{
       display: inline;
       padding-right: 20px;
     }
-    
+
     nav a{
       color: black;
       font-weight: bold;
       text-decoration:none;
     }
-    
+
     nav a:hover{
       text-decoration: underline;
       color: orchid;
     }
-    
+
     #nav_bar ul li a.active-page{
       color: blue;
     }
-    
+
     .skip a{
       background: white;
       left: 0;
@@ -63,65 +96,237 @@ h3{
       transition: top 1s ease-out;
       z-index: 1;
     }
-    
-    .skip a:focus, .skip a:active{
-      border: 2px solid black;
-      left: auto;
-      top: auto;
-      height: auto;
-      overflow: auto;
-      margin: 40px;
-      padding: 6px;
-      z-index: 999;
-    }
-    
-    a.skip{
-      top:auto;
-    } 
-    
-    *:focus{
-    border: 2px solid black;
-    } 
-    
+
+
     footer{
       background-color: lightgrey;
       color: black;
-      grid-column: 1 / -1;  
-      padding: 6px;
+      grid-column: 1 / -1;
+      padding: 20px 0px 20px 0px;
       text-align: center;
     }
-    
+
     .container{
       display: grid;
       grid-template-columns: 1fr 3fr 1fr;
-      width: 100vw; 
+      width: 100vw;
     }
+
     h4{
       padding: 20px;
     }
     .publications{
       padding: 20px;
-
+      margin-left: 15px;
+      line-height: 1.5;
+    }
+    .published{
+      background-color: lightblue;
     }
     .nav{
       font-size: 14px;
       line-height: 23px;
       background-attachment: fixed;
       background-color: white;
-      padding-top: 10px; 
+      padding-top: 10px;
       padding-bottom: 10px;
-      text-align: right;  
-      grid-column: 3 / 3; 
+      text-align: right;
+      grid-column: 3 / 3;
+      grid-row: 1/2;
     }
-    
+
+    #imgwrap{
+      display: flex nowrap;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 35px 35px 0px 35px;
+    }
+
+    #imgwrap img {
+      width: 100%;
+    }
+
     #maininfo{
       display: flex nowrap;
       flex-direction: column;
       justify-content: space-around;
-      padding: 20px;
+      /* padding: 20px; */
+      margin: 25px;
 
     }
+
+    #teaching{
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url("../images/teaching.jpg");
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;        /* Parallax effect */
+  color: white;
+  height: 300px;
+  padding: 30px;
+  grid-column: 1 / -1;
+    }
+
+    #talks{
+      background-attachment: fixed; /* Parallax effect */
+      background-image: url("../images/talks.jpg");
+      background-position: center;  /* Parallax effect */
+      background-repeat: no-repeat; /* Parallax effect */
+      background-size: cover;        /* Parallax effect */
+      color: black;
+      height: 300px;
+      padding: 30px;
+      grid-column: 1 / -1;
+        }
+
 
     #maininfo img {
       width: 100%;
     }
+
+/*this is for the contact page*/
+.container-contact{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 25% 50% 25%;
+  grid-row-gap: 50px;
+  align-items: center;
+  justify-items: center;
+  }
+  #contact-header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+
+#contact-header h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+#form{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-content: center;
+  align-items: left;
+  background-color: #E8E8E8;
+  padding: 20px 20px 20px 20px;
+  border: solid 1px darkgray;
+}
+
+.ceren{
+grid-column: 1/2;
+grid-row: 1/2;
+text-align: left;
+padding: 20px 0px 20px 20px;
+font-size: 24pt;
+font-weight: bold;
+background-color: white;
+}
+
+.ceren h1{
+align-items: center;
+justify-items: center;
+}
+
+.form-group{
+  padding: 10px;
+  width: 300px;
+}
+
+input{
+  height: 50px;
+  width: 300px;
+  border: solid 1px black;
+
+}
+
+textarea{
+  height: 60px;
+  width: 300px;
+  border: solid 1px black;
+}
+
+.text-center{
+  text-align: center;
+  font-weight: bold;
+  font-size: 24pt;
+  padding: 0px 0px 50px 0px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+ul.a {
+  list-style-type: square;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* this is the end of the contact page */
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+      html{
+        scroll-behavior: initial;
+    }
+    .skip a{
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: none;
+      transition: none;
+      z-index: 1;
+    }
+
+    .skip a:focus{
+      top:0;
+    }
+}
