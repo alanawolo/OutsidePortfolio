@@ -302,8 +302,238 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 /* this is the end of the contact page */
+
+.media{
+display: flex nowrap;
+flex-direction: column;
+justify-content: space-around;
+padding: 20px;
+
+
+}
+.media h1{
+background-color: lightblue;
+
+}
+.media h2{
+  font-size: 24px;
+  line-height: 1.5;
+  color:black;
+  font-weight: bold;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+.news-image{
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  justify-content:  center;
+  margin: 0 auto;
+
+
+
+}
+
+
+.movements{
+  display: flex nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+
+
+}
+.movements h2{
+  font-size: 24px;
+  line-height: 1.5;
+  color:black;
+  font-weight: bold;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+.gezi-image{
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  justify-content:  center;
+  margin: 0 auto;
+
+
+}
+.networks{
+  display: flex nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+.networks h2{
+  font-size: 24px;
+  line-height: 1.5;
+  color:black;
+  font-weight: bold;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+.social-image{
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  justify-content:  center;
+  margin: 0 auto;
+
+
+}
+.deliberation{
+  display: flex nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+.deliberation h2{
+    font-size: 24px;
+    line-height: 1.5;
+    color:black;
+    font-weight: bold;
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0,0,0,.1),
+      0 0 5px rgba(0,0,0,.1),
+      0 1px 3px rgba(0,0,0,.3),
+      0 3px 5px rgba(0,0,0,.2),
+      0 5px 10px rgba(0,0,0,.25),
+      0 10px 10px rgba(0,0,0,.2),
+      0 20px 20px rgba(0,0,0,.15);
+  }
+
+.threading-image{
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  justify-content:  center;
+  margin: 0 auto;
+
+
+}
+.charity{
+  display: flex nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+.charity h2{
+  font-size: 24px;
+  line-height: 1.5;
+  color:black;
+  font-weight: bold;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+.charities1-image{
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  justify-content:  center;
+  margin: 0 auto;
+
+}
+.Service{
+  font-size: 15px;
+  line-height: 20px;
+  padding: 15px;
+
+  display: flex nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+.Service h2{
+  font-size: 24px;
+  line-height: 1.5;
+  color:black;
+  font-weight: bold;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+.service-image{
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  justify-content:  center;
+  margin: 0 auto;
+
+}
+
+
 
 @media screen and (min-width: 768px) {
 }
