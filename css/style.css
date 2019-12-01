@@ -304,6 +304,14 @@ textarea {
 }
 /* this is the end of the contact page */
 
+.container-projects{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 25% 50% 25%;
+  grid-row-gap: 50px;
+  align-items: center;
+  justify-items: center;
+  }
 .media{
 display: flex nowrap;
 flex-direction: column;
