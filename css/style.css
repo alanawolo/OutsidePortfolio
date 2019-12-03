@@ -48,17 +48,12 @@ h1.ceren{
   text-align: center;
 }
 
-h2{
-  text-align: center;
-  font-size: 20px;
-  padding: 25px;
-  line-height: 1.25;
-}
 
-h3{
+h2{
   font-size: 14px;
   line-height: 20px;
   color: black;
+  text-align: center;
 }
 
 
@@ -129,7 +124,7 @@ h3{
     h4{
       padding: 20px;
     }
-    .publications{
+    #publications{
       padding: 20px;
       margin-left: 15px;
       line-height: 1.5;
@@ -156,12 +151,14 @@ h3{
     #imgwrap{
       display: flex nowrap;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       padding: 35px 35px 0px 35px;
     }
 
     #imgwrap img {
       width: 100%;
+      align-content: center;
+      justify-content: center;
     }
 
     #maininfo{
@@ -369,7 +366,7 @@ textarea {
     align-items: center;
     justify-items: center;
     }
-.media{
+#media{
 display: flex nowrap;
 flex-direction: column;
 justify-content: space-around;
@@ -377,11 +374,11 @@ padding: 20px;
 
 
 }
-.media h1{
+#media h1{
 background-color: lightblue;
 
 }
-.media h2{
+#media h2{
   font-size: 24px;
   line-height: 1.5;
   color:black;
@@ -655,7 +652,7 @@ background-color: lightblue;
       
       }
 
-      h3{
+      h2{
         font-size: 16px;
         line-height: 20px;
         color: black;
@@ -730,7 +727,7 @@ background-color: lightblue;
 
    
 
-      h3{
+      h2{
         font-size: 16px;
         line-height: 20px;
         color: black;
