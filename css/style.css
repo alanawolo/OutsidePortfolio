@@ -665,7 +665,7 @@ background-color: lightblue;
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
 
   #imgwrap img{
     align-items: center;
