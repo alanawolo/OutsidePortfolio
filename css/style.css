@@ -1,10 +1,10 @@
 html{
     scroll-behavior: smooth;
+    font-family: 'Abel', sans-serif;
 }
 
 body{
   background-color: white;
-  font-family: 'Abel', sans-serif;
   font-size: 18px;
 
 }
@@ -118,7 +118,7 @@ h3{
 
     .container{
       display: grid;
-      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-columns: 25% ;
       width: 100vw;
     }
 
@@ -129,9 +129,13 @@ h3{
       padding: 20px;
       margin-left: 15px;
       line-height: 1.5;
+      font-weight: bold;
     }
+
+
     .published{
       background-color: lightblue;
+      margin: 20px 0px 20px 0px;
     }
     .nav{
       font-size: 14px;
@@ -245,7 +249,7 @@ h3{
   grid-row-end: 3;
   justify-content: center;
   align-items: left;
-  background-color: #E8E8E8;
+  background-color: lightblue;
   padding: 20px 20px 20px 20px;
   border: solid 1px darkgray;
 }
@@ -320,9 +324,18 @@ input[type=email], select {
   box-sizing: border-box;
 }
 
+ol li{
+  padding: 5px 0px 5px 0px;
+}
+
 ul.a {
   list-style-type: square;
   padding: 30px;
+}
+
+ol{
+  position: relative;
+  left: 10px;
 }
 
 textarea {
@@ -338,7 +351,7 @@ textarea {
 
 .container-projects{
   display: grid;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto;
   grid-template-columns: 25% 50% 25%;
   grid-row-gap: 50px;
   align-items: center;
@@ -346,7 +359,7 @@ textarea {
   }
   .container-publications{
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto;
     grid-template-columns: 25% 50% 25%;
     grid-row-gap: 50px;
     align-items: center;
@@ -600,14 +613,14 @@ background-color: lightblue;
   } */
   .container{
     display: grid;
-    grid-template-columns: 1fr auto 5fr auto 1fr;
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: auto auto auto auto;
     /* grid-template-columns: 25% 50% 25% 50% 25%; */
     /* width: 100vw; */
   }
 
   .nav{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 23px;
     background-attachment: fixed;
     background-color: white;
@@ -660,6 +673,9 @@ background-color: lightblue;
     grid-row: 4 / 2;
       }
 
+  #form{
+    padding: 20px 120px 20px 120px;
+  }
 
 
 }
@@ -683,14 +699,14 @@ background-color: lightblue;
   } */
   .container{
     display: grid;
-    grid-template-columns: 1fr auto 5fr auto 1fr;
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: auto auto auto auto;
     /* grid-template-columns: 25% 50% 25% 50% 25%; */
     /* width: 100vw; */
   }
 
   .nav{
-    font-size: 20px;
+    font-size: 21px;
     line-height: 23px;
     background-attachment: fixed;
     background-color: white;
@@ -818,7 +834,9 @@ background-color: lightblue;
             
             }
 
-
+            #form{
+              padding: 40px 200px 40px 200px;
+            }
 
 }
 
