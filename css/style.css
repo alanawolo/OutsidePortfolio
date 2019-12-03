@@ -35,7 +35,7 @@ p{
 
 h1{
   font-size: 35px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: center;
     padding-top: 25px;
     padding-bottom: 20px;
@@ -63,6 +63,13 @@ h3{
   line-height: 20px;
   color: black;
   font-style: italic;
+}
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 10px;
+  margin: auto 0;
 }
 
     nav ul{
@@ -164,7 +171,7 @@ h3{
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;        /* Parallax effect */
-  color: white;
+  color: black;
   height: 100px;
   padding: 30px;
   grid-column: 1 / -1;
@@ -182,21 +189,21 @@ h3{
       grid-column: 1 / -1;
         }
 
+
     #prospective{
-        background-attachment: fixed; /* Parallax effect */
-        background-image: url("../images/michigan.jpg");
-        background-position: center;  /* Parallax effect */
-        background-repeat: no-repeat; /* Parallax effect */
-        background-size: cover;        /* Parallax effect */
-        color: black;
-        height: 100px;
-        padding: 30px;
-        grid-column: 1 / -1;
-        /* display: flex nowrap;
-        flex-direction: column;
-        justify-content: space-around; */
-      
-        }
+      background-attachment: fixed; /* Parallax effect */
+      background-image: url("../images/michigan.jpg");
+      background-position: center;  /* Parallax effect */
+      background-repeat: no-repeat; /* Parallax effect */
+      background-size: cover;        /* Parallax effect */
+      color: black;
+      height: 100px;
+      padding: 30px;
+      grid-column: 1 / -1;
+            
+    
+    }
+
 
 .intro{
   display:flex;
@@ -578,20 +585,24 @@ background-color: lightblue;
 @media screen and (min-width: 768px) {
 
   #imgwrap img{
-    /* justify-content: center; */
-    width: 40%;
-    /* padding: 80px; */
-    /* grid-column: 1 / -1;  */
+    align-items: center;
+    width: 50%;
+    grid-column: 2 / 3; 
+    grid-row: 3 / 1;
+    margin-left: 150px;
+    padding-bottom: 20px;
   } 
-  #imgwrap{
+  /* #imgwrap{
     display: flex nowrap;
     flex-direction: column;
     justify-content: space-around;
     padding: 35px 35px 0px 35px;
-  }
+  } */
   .container{
     display: grid;
     grid-template-columns: 1fr auto 5fr auto 1fr;
+    grid-template-rows: auto auto auto auto;
+    /* grid-template-columns: 25% 50% 25% 50% 25%; */
     /* width: 100vw; */
   }
 
@@ -640,19 +651,175 @@ background-color: lightblue;
         color: black;
         font-style: italic;
       }
-  
+
+      .two{
+    /* padding-top: 15px; */
+    padding-bottom: 10px;
+    text-align: left;
+    grid-column: 2 / 2; 
+    grid-row: 4 / 2;
+      }
 
 
 
 }
 
 
-
-
-
-
-
 @media screen and (min-width: 1200px) {
+
+  #imgwrap img{
+    align-items: center;
+    width: 50%;
+    grid-column: 2 / 3; 
+    grid-row: 3 / 1;
+    margin-left: 250px;
+    padding-bottom: 20px;
+  } 
+  /* #imgwrap{
+    display: flex nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 35px 35px 0px 35px;
+  } */
+  .container{
+    display: grid;
+    grid-template-columns: 1fr auto 5fr auto 1fr;
+    grid-template-rows: auto auto auto auto;
+    /* grid-template-columns: 25% 50% 25% 50% 25%; */
+    /* width: 100vw; */
+  }
+
+  .nav{
+    font-size: 20px;
+    line-height: 23px;
+    background-attachment: fixed;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: right;
+    grid-column: 1 / -1; 
+  
+  }
+
+  ul.a {
+    list-style-type: square;
+    padding: 100px;
+  }
+
+
+   
+
+      h3{
+        font-size: 16px;
+        line-height: 20px;
+        color: black;
+      }
+      
+      
+      .one{
+        font-size: 14px;
+        line-height: 20px;
+        color: black;
+        font-style: italic;
+      }
+
+      .two{
+    /* padding-top: 15px; */
+    padding-bottom: 10px;
+    font-size: 50px;
+    text-align: left;
+    grid-column: 2 / 2; 
+    grid-row: 4 / 2;
+      }
+
+      #teaching{
+        background-attachment: fixed; /* Parallax effect */
+        background-image: url("../images/teaching.jpg");
+        background-position: center;  /* Parallax effect */
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;        /* Parallax effect */
+        color: black;
+        height: 300px;
+        padding: 30px;
+        grid-column: 1 / -1;
+          }
+      
+          #talks{
+            background-attachment: fixed; /* Parallax effect */
+            background-image: url("../images/talks.jpg");
+            background-position: center;  /* Parallax effect */
+            background-repeat: no-repeat; /* Parallax effect */
+            background-size: cover;        /* Parallax effect */
+            color: black;
+            height: 300px;
+            padding: 30px;
+            grid-column: 1 / -1;
+              }
+      
+      
+          #prospective{
+            background-attachment: fixed; /* Parallax effect */
+            background-image: url("../images/michigan.jpg");
+            background-position: center;  /* Parallax effect */
+            background-repeat: no-repeat; /* Parallax effect */
+            background-size: cover;        /* Parallax effect */
+            color: black;
+            height: 300px;
+            padding: 30px;
+            grid-column: 1 / -1;
+                  
+          
+          }
+
+          h1{
+            font-size: 45px;
+              line-height: 30px;
+              text-align: center;
+              padding-top: 25px;
+              padding-bottom: 20px;
+          
+              /* padding-left: 25px; */
+              /* grid-column: 3 / 3; */
+          }
+          
+          h2{
+            text-align: center;
+            font-size: 30px;
+            padding: 25px;
+            line-height: 1.25;
+          }
+          
+          h3{
+            font-size: 28px;
+            line-height: 35px;
+            color: black;
+          }
+
+          .one{
+            font-size: 16px;
+            line-height: 30px;
+            color: black;
+            font-style: italic;
+          }
+          
+          .text-block{
+            background-color: rgba(255, 255, 255, .8);
+            border: 5px solid black;
+            padding-top: 10px;
+            margin: auto;
+          }
+
+          p{
+              font-size: 25px;
+              line-height: 30px;
+              padding: 35px;
+              margin-left: 70px;
+              margin-right: 70px;
+            
+            }
+
+
+
 }
 
 @media screen and (prefers-reduced-motion: reduce){
